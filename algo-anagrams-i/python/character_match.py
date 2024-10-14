@@ -24,5 +24,18 @@ def is_character_match(string1, string2):
 		return True
 # Part 2
 def anagrams_for(word, list_of_words):
-	# your code here
-	pass
+	# Converting word to list of characters
+	anagram_list = []
+	# Sorting word in alphabetical order and storing into sorted_word variable
+	sorted_word = sorted(word.lower())
+	
+	# Iterating through list_of_words
+	for element in list_of_words:
+    # If sorted_word is the same as the sorted element in list_of_words,
+    # Append that element to anagram_list
+		if sorted_word == sorted(element.lower()):
+			anagram_list.append(element)
+	return anagram_list
+
+
+				
