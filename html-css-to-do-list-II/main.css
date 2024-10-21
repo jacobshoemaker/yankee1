@@ -1,0 +1,25 @@
+
+body {
+    text-align: center;
+}
+
+.box {
+    align-content: center;
+    align-items: center;
+    height: 20vmin;
+    width: 100%;
+    background-color: rgba(52, 188, 218, 0.627);
+    border: 1px black solid;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+text {
+    
+}
