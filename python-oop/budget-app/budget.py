@@ -14,10 +14,19 @@ class Budget:
     
     def view_balance(self):
         return self.remaining_balance
+    
+    def expense_by_cat(self, category):
+        filtered_list = filter(lambda x: x['category'] == category, self.expenses)
+        return list(filtered_list)
 
-# my_budget = Budget(5000)
+
+        
+my_budget = Budget(5000)
  
-# my_budget.add_expense(2000, "bills")
+my_budget.add_expense(2000, "bills")
+my_budget.add_expense(100, "gas")
 
-# print(my_budget.view_balance())
+
+print(my_budget.view_balance())
+print(my_budget.expense_by_cat("bills"))
     
